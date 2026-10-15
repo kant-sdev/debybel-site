@@ -6,7 +6,7 @@ export const site = {
   twitchUrl: 'https://www.twitch.tv/debybel',
   mockLiveStatus: false,
   meta: {
-    title: 'Debybel — um cantinho caótico sob as estrelas',
+    title: 'Debybel, um cantinho caótico sob as estrelas',
     description: 'Entra no cantinho celestial da Debybel: streams, jogos, comandos e uma comunidade meio caótica, muito querida.',
     themeColor: '#0f0f12',
   },
@@ -14,7 +14,7 @@ export const site = {
     eyebrow: { pt: 'um cantinho cósmico da internet', en: 'a tiny cosmic corner of the internet' },
     line: {
       pt: 'Caótica, esqueço o que estava falando no meio da frase. Fica por aqui mesmo assim?',
-      en: 'Chaotic, and I forget what I was saying mid-sentence. Stay a little anyway?',
+      en: "I'm chaotic and I forget what I was saying in the middle of a sentence. Stay a little anyway?",
     },
     twitchCta: { pt: 'Assistir na Twitch', en: 'Watch on Twitch' },
     playerLabel: { pt: 'janela para o caos', en: 'window into the chaos' },
@@ -41,12 +41,12 @@ export const site = {
     title: { pt: 'Sobre mim', en: 'About me' },
     text: {
       pt: 'Hallo! Meu nome é Debybel, sou caótica e esqueço o que estava falando no meio da frase.',
-      en: 'Debybel here — chaotic, and I often forget what I was saying mid-sentence.',
+      en: "Debybel here. I'm chaotic, and I often forget what I was saying in the middle of a sentence.",
     },
     facts: [
       { pt: 'Aniversário · 27/03', en: 'Birthday · 27/03', symbol: 'star' },
       { pt: 'Áries', en: 'Aries', symbol: 'aries' },
-      { pt: 'Pará — Brasil', en: 'Pará — Brazil', symbol: 'star' },
+      { pt: 'Pará, Brasil', en: 'Pará, Brazil', symbol: 'star' },
       { pt: 'Mora em Portugal', en: 'Lives in Portugal', symbol: 'star' },
     ],
     commandsLabel: { pt: 'Palavras mágicas do chat', en: 'Chat magic words' },
@@ -56,8 +56,8 @@ export const site = {
   support: {
     title: { pt: 'Apoie a stream', en: 'Support the stream' },
     intro: {
-      pt: 'Se quiser ajudar este pequeno universo a continuar girando, aqui estão alguns portais. Sem pressão — sua presença já é carinho.',
-      en: 'If you want to help this little universe keep spinning, here are a few portals. No pressure — being here is already lovely.',
+      pt: 'Se quiser ajudar este pequeno universo a continuar girando, aqui estão alguns portais. Sem pressão. Sua presença já é carinho.',
+      en: 'If you want to help this little universe keep spinning, here are a few portals. No pressure. Being here is already lovely.',
     },
     cards: [
       { id: 'kofi', title: 'Ko-fi', description: { pt: 'Um mimo para a comandante deste caos.', en: 'A little treat for the captain of this chaos.' }, url: '', action: { pt: 'Visitar Ko-fi', en: 'Visit Ko-fi' }, icon: 'heart' },
@@ -100,7 +100,7 @@ export const site = {
       pt: 'Eu não espero nenhuma doação, mas eu aprecio todas!',
       en: 'I don’t expect any donations, but I appreciate every one!',
     },
-    nonRefundable: { pt: 'As doações não são reembolsáveis.', en: 'Donations are non-refundable.' },
+    nonRefundable: { pt: 'As doações não são reembolsáveis.', en: 'Donations cannot be refunded.' },
     artistsTitle: { pt: 'Artistas', en: 'Artists' },
     artists: ['Raids @ODREX MUSIC', 'Subs @prodLMG'],
   },
