@@ -3,8 +3,17 @@ import { site, type Language } from '../data/site';
 import { LiveBadge } from './LiveBadge';
 
 export function Hero({ language }: { language: Language }) {
-  const parent = typeof window === 'undefined' ? 'localhost' : window.location.hostname;
-  const playerUrl = `https://player.twitch.tv/?channel=${site.twitchChannel}&parent=${encodeURIComponent(parent)}&muted=true`;
+  const playerUrl = (() => {
+    const player = new URL('https://player.twitch.tv/');
+    const parents = typeof window === 'undefined'
+      ? ['localhost']
+      : [...new Set([window.location.hostname || 'localhost', 'localhost'])];
+
+    player.searchParams.set('channel', site.twitchChannel);
+    parents.forEach((parent) => player.searchParams.append('parent', parent));
+    player.searchParams.set('muted', 'true');
+    return player.toString();
+  })();
   return (
     <section className="hero page-container" aria-labelledby="hero-title">
       <div className="hero-grid">
