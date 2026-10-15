@@ -1,0 +1,148 @@
+export type Language = 'pt' | 'en';
+
+export const site = {
+  name: 'Debybel',
+  twitchChannel: 'debybel',
+  twitchUrl: 'https://www.twitch.tv/debybel',
+  mockLiveStatus: false,
+  meta: {
+    title: 'Debybel — um cantinho caótico sob as estrelas',
+    description: 'Entra no cantinho celestial da Debybel: streams, jogos, comandos e uma comunidade meio caótica, muito querida.',
+    themeColor: '#0f0f12',
+  },
+  hero: {
+    eyebrow: { pt: 'um cantinho cósmico da internet', en: 'a tiny cosmic corner of the internet' },
+    line: {
+      pt: 'Caótica, esqueço o que estava falando no meio da frase. Fica por aqui mesmo assim?',
+      en: 'Chaotic, and I forget what I was saying mid-sentence. Stay a little anyway?',
+    },
+    twitchCta: { pt: 'Assistir na Twitch', en: 'Watch on Twitch' },
+    playerLabel: { pt: 'janela para o caos', en: 'window into the chaos' },
+    playerHint: { pt: 'O embed não abriu? A porta da stream continua aqui.', en: 'Embed not loading? The stream door is right here.' },
+    playerFallback: { pt: 'Abrir a stream', en: 'Open the stream' },
+    tabHint: { pt: 'A stream abre em outra aba', en: 'The stream opens in a new tab' },
+  },
+  nav: [
+    { id: 'about', label: { pt: 'Sobre', en: 'About' } },
+    { id: 'support', label: { pt: 'Apoie', en: 'Support' } },
+    { id: 'games', label: { pt: 'Jogos', en: 'Games' } },
+    { id: 'rules', label: { pt: 'Regras', en: 'Rules' } },
+    { id: 'socials', label: { pt: 'Redes', en: 'Socials' } },
+  ],
+  accessibility: {
+    navigationLabel: { pt: 'Navegação principal', en: 'Main navigation' },
+    skipLink: { pt: 'Saltar para o conteúdo', en: 'Skip to content' },
+    opensNewTab: { pt: 'abre numa nova aba', en: 'opens in a new tab' },
+    aries: { pt: 'Signo de Áries', en: 'Aries zodiac sign' },
+    copyMid: { pt: 'Copiar comando !mid', en: 'Copy !mid command' },
+    copied: { pt: 'Copiado!', en: 'Copied!' },
+  },
+  about: {
+    title: { pt: 'Sobre mim', en: 'About me' },
+    text: {
+      pt: 'Hallo! Meu nome é Debybel, sou caótica e esqueço o que estava falando no meio da frase.',
+      en: 'Debybel here — chaotic, and I often forget what I was saying mid-sentence.',
+    },
+    facts: [
+      { pt: 'Aniversário · 27/03', en: 'Birthday · 27/03', symbol: 'star' },
+      { pt: 'Áries', en: 'Aries', symbol: 'aries' },
+      { pt: 'Pará — Brasil', en: 'Pará — Brazil', symbol: 'star' },
+      { pt: 'Mora em Portugal', en: 'Lives in Portugal', symbol: 'star' },
+    ],
+    commandsLabel: { pt: 'Palavras mágicas do chat', en: 'Chat magic words' },
+    commands: ['!comandos', '!agenda', '!lurk', '!clip', '!steam', '!pix', '!mid', '!kofi', '!discord', '!youtube', '!tiktok'],
+    languageLabel: { pt: 'Idioma', en: 'Language' },
+  },
+  support: {
+    title: { pt: 'Apoie a stream', en: 'Support the stream' },
+    intro: {
+      pt: 'Se quiser ajudar este pequeno universo a continuar girando, aqui estão alguns portais. Sem pressão — sua presença já é carinho.',
+      en: 'If you want to help this little universe keep spinning, here are a few portals. No pressure — being here is already lovely.',
+    },
+    cards: [
+      { id: 'kofi', title: 'Ko-fi', description: { pt: 'Um mimo para a comandante deste caos.', en: 'A little treat for the captain of this chaos.' }, url: '', action: { pt: 'Visitar Ko-fi', en: 'Visit Ko-fi' }, icon: 'heart' },
+      { id: 'midfielder', title: 'Midfielder', description: { pt: 'Metas da stream e sonhos em construção.', en: 'Stream goals and dreams in progress.' }, url: '', action: { pt: 'Ver metas', en: 'See the goals' }, icon: 'sparkle' },
+      { id: 'steam', title: 'Steam wishlist', description: { pt: 'Jogos que podem virar a próxima obsessão.', en: 'Games that might become the next obsession.' }, url: '', action: { pt: 'Ver wishlist', en: 'See wishlist' }, icon: 'game' },
+      { id: 'throne', title: 'Throne wishlist', description: { pt: 'Presentinhos escolhidos com carinho.', en: 'Thoughtful little gifts, picked with care.' }, url: '', action: { pt: 'Ver wishlist', en: 'See wishlist' }, icon: 'gift' },
+      { id: 'pix', title: 'Pix · !mid', description: { pt: 'Sons, desafios e trolls fofos: use !mid no chat para ativar.', en: 'Sounds, challenges and silly trolls: use !mid in chat to activate.' }, url: '', action: { pt: 'Comando: !mid', en: 'Command: !mid' }, icon: 'moon', commandOnly: true },
+    ],
+    subsTitle: { pt: 'Clube das estrelinhas', en: 'The little star club' },
+    subsAside: { pt: 'um obrigada do tamanho do universo', en: 'a thank-you the size of the universe' },
+    subsBenefits: {
+      pt: 'Como agradecimento aos inscritos: sem propagandas, badges exclusivas desenhadas por mim, emotes personalizados, cargo exclusivo no Discord, amor eterno e gratidão pelo apoio.',
+      en: 'As a thank-you to subscribers: no ads, exclusive badges designed by me, custom emotes, an exclusive Discord role, endless love and gratitude for your support.',
+    },
+    subsTableTitle: { pt: 'Recompensas por subs', en: 'Sub rewards' },
+    bitsTableTitle: { pt: 'Recompensas por bits', en: 'Bit rewards' },
+    pixTableTitle: { pt: 'Doações via Pix', en: 'Pix donations' },
+    subRewards: [
+      { amount: '1', reward: 'epic music' },
+      { amount: '5', reward: 'eurovision' },
+      { amount: '10', reward: 'OMG' },
+      { amount: '20', reward: 'vitas' },
+    ],
+    bitRewards: [
+      { amount: '10', reward: 'Scatman' },
+      { amount: '13', reward: 'Corona Shakira meme' },
+      { amount: '20', reward: 'shooting stars' },
+      { amount: '30', reward: 'crazy frog' },
+      { amount: '50', reward: 'festa no apê' },
+      { amount: '100', reward: 'Gangnam Style' },
+      { amount: '500', reward: 'Feiticeira faz feitiço' },
+    ],
+    pixRewards: [
+      { amount: 'R$1', reward: { pt: 'Escolha uma música', en: 'Choose a song' } },
+      { amount: 'R$10', reward: { pt: 'Roleta de desafios', en: 'Challenge roulette' } },
+      { amount: 'R$50', reward: { pt: 'Escolha o game (1h)', en: 'Choose the game (1h)' } },
+      { amount: 'R$500', reward: { pt: 'Fecha a live', en: 'End the stream' } },
+    ],
+    donationNote: {
+      pt: 'Eu não espero nenhuma doação, mas eu aprecio todas!',
+      en: 'I don’t expect any donations, but I appreciate every one!',
+    },
+    nonRefundable: { pt: 'As doações não são reembolsáveis.', en: 'Donations are non-refundable.' },
+    artistsTitle: { pt: 'Artistas', en: 'Artists' },
+    artists: ['Raids @ODREX MUSIC', 'Subs @prodLMG'],
+  },
+  games: {
+    title: { pt: 'Jogos principais', en: 'Main games' },
+    intro: { pt: 'O que está no menu? A resposta muda conforme o humor e o nível de caos.', en: 'What’s on the menu? Depends on the mood and current chaos levels.' },
+    placeholderLabel: { pt: 'capa em breve', en: 'artwork soon' },
+    items: [
+      { name: '[JOGO 1]', description: { pt: 'A próxima aventura que vai roubar nossas noites.', en: 'The next adventure stealing our nights.' } },
+      { name: '[JOGO 2]', description: { pt: 'Exploração, decisões questionáveis e vibes.', en: 'Exploration, questionable choices and vibes.' } },
+      { name: '[JOGO 3]', description: { pt: 'Pode envolver gritos. Provavelmente envolve gritos.', en: 'May involve yelling. Probably involves yelling.' } },
+      { name: '[JOGO 4]', description: { pt: 'Uma surpresa guardada na manga celestial.', en: 'A surprise tucked up the celestial sleeve.' } },
+    ],
+  },
+  rules: {
+    title: { pt: 'Regras do chat', en: 'Chat rules' },
+    items: [
+      { pt: 'Não peça para dar raid.', en: 'Do not ask for a raid.' },
+      { pt: 'Não me deixe desconfortável.', en: 'Do not make me uncomfortable.' },
+      { pt: 'Eu não jogo em call.', en: 'I do not play in voice calls.' },
+      { pt: 'Comentários degradantes serão excluídos.', en: 'Degrading comments will be deleted.' },
+      { pt: 'Não crie drama aqui.', en: 'Do not bring drama here.' },
+    ],
+    modNote: {
+      pt: 'A quebra das regras pode resultar em ban. A decisão cabe aos mods.',
+      en: 'Breaking the rules may result in a ban. The decision is up to the mods.',
+    },
+    modLabel: { pt: 'nota dos mods', en: 'mod note' },
+  },
+  socials: {
+    title: { pt: 'Encontra-me por aí', en: 'Find me out there' },
+    intro: { pt: 'Portais para outros cantinhos da internet.', en: 'Portals to other corners of the internet.' },
+    links: [
+      { name: 'Twitch', url: 'https://www.twitch.tv/debybel', icon: 'twitch' },
+      { name: 'Discord', url: '', icon: 'discord' },
+      { name: 'YouTube', url: '', icon: 'youtube' },
+      { name: 'TikTok', url: '', icon: 'tiktok' },
+    ],
+    unavailable: { pt: 'Link ainda não disponível', en: 'Link not available yet' },
+  },
+  footer: {
+    pt: 'Feito com carinho, um pouco de caos e poeira estelar.',
+    en: 'Made with care, a little chaos and stardust.',
+  },
+} as const;
