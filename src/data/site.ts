@@ -6,7 +6,7 @@ export const site = {
   twitchUrl: 'https://www.twitch.tv/debybel',
   mockLiveStatus: false,
   meta: {
-    title: 'Debybel, um cantinho caótico sob as estrelas',
+    title: 'Debybel',
     description: 'Entra no cantinho celestial da Debybel: streams, jogos, comandos e uma comunidade meio caótica, muito querida.',
     themeColor: '#0f0f12',
   },
