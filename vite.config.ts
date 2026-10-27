@@ -4,6 +4,7 @@ import type { IncomingMessage, ServerResponse } from 'node:http';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig, loadEnv, type ViteDevServer } from 'vite';
+import vercelConfig from './vercel.json' with { type: 'json' };
 import { getVercelEntries } from 'vite-plugin-vercel';
 import vercel from 'vite-plugin-vercel/vite';
 
@@ -118,9 +119,7 @@ export default defineConfig(({ mode }) => {
       tailwindcss(),
       vercel({
         entries: apiEntries,
-        rewrites: [
-          { source: '/(.*)', destination: '/index.html', enforce: 'post' },
-        ],
+        rewrites: vercelConfig.rewrites.map((rewrite) => ({ ...rewrite, enforce: 'post' })),
       }),
     ],
     resolve: {
