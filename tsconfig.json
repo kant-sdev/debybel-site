@@ -21,15 +21,14 @@
       "vite/client",
       "node"
     ],
-    "baseUrl": ".",
     "paths": {
       "@/*": [
-        "src/*"
+        "./src/*"
       ]
     }
   },
   "include": [
     "src",
     "vite.config.ts"
-  ]
+, "api"  ]
 }
