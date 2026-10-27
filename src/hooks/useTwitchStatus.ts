@@ -40,7 +40,9 @@ export function useTwitchStatus() {
       requestInProgress = true;
 
       try {
-        const response = await fetch('/api/twitch-status', { signal: controller.signal });
+        const response = await fetch('/.netlify/functions/twitch-status', {
+          signal: controller.signal,
+        });
         if (!response.ok) {
           throw new Error(`Twitch status request failed with status ${response.status}`);
         }

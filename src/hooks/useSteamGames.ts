@@ -8,8 +8,6 @@ export interface SteamGame {
   store_url: string;
 }
 
-const MAIN_GAME_APPIDS = ['381210', '1086940', '2050650', '227300'];
-
 function isSteamGame(value: unknown): value is SteamGame {
   if (typeof value !== 'object' || value === null) {
     return false;
@@ -36,8 +34,7 @@ export function useSteamGames() {
 
     const fetchGames = async () => {
       try {
-        const query = new URLSearchParams({ appids: MAIN_GAME_APPIDS.join(',') });
-        const response = await fetch(`/api/steam-games?${query}`, {
+        const response = await fetch('/.netlify/functions/steam-games', {
           signal: controller.signal,
         });
 
