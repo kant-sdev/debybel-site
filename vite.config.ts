@@ -116,7 +116,12 @@ export default defineConfig(({ mode }) => {
       localApiPlugin(apiEntries),
       react(),
       tailwindcss(),
-      vercel({ entries: apiEntries }),
+      vercel({
+        entries: apiEntries,
+        rewrites: [
+          { source: '/(.*)', destination: '/index.html', enforce: 'post' },
+        ],
+      }),
     ],
     resolve: {
       alias: { '@': path.resolve(rootDir, 'src') },
